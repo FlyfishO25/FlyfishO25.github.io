@@ -9,7 +9,7 @@ layout: default
         var t=new Date(new Date().getTime()+1000*60*60*24*30); 
         document.cookie="a=hello; expires="+t.toGMTString(); 
         swal("Warning", "This website hasn't finish, this message will only display once.", "info");
-        location.reload();
+        setTimeout(location.reload(), 5000);
     }
     </script>
     {% if site.data.site.uiux.meng == true %}
