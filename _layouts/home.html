@@ -9,6 +9,7 @@ layout: default
         swal("Warning", "This website hasn't finish, this message will only display once.", "info");
         var t=new Date(new Date().getTime()+1000*60*60*24*30); 
         document.cookie="a=hello; expires="+t.toGMTString(); 
+        location.reload()
     }
     </script>
     {% if site.data.site.uiux.meng == true %}
