@@ -6,9 +6,9 @@ layout: default
     <div class="k-posts-list"></div>
     <script>
     if(document.cookie.indexOf("a=hello")==-1){ 
-        swal("Warning", "This website hasn't finish, this message will only display once.", "info");
         var t=new Date(new Date().getTime()+1000*60*60*24*30); 
         document.cookie="a=hello; expires="+t.toGMTString(); 
+        setTimeout(swal("Warning", "This website hasn't finish, this message will only display once.", "info"), 5000);
         location.reload()
     }
     </script>
